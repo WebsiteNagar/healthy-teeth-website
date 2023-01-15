@@ -8,6 +8,7 @@
   "dependencies": {
     "next": "latest",
     "react": "18.2.0",
+    "react-before-after-slider-component": "^1.1.6",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
