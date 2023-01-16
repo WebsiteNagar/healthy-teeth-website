@@ -1,9 +1,17 @@
 import React from "react";
 
-type Props = {};
+type BroadcastStripProps = {
+  content: string | React.ReactNode;
+};
 
-const BroadcastStrip = (props: Props) => {
-  return <div className="w-full h-10 bg-primary">BroadcastStrip</div>;
+const BroadcastStrip: React.FC<BroadcastStripProps> = ({ content }) => {
+  return (
+    <div className="w-full h-6 text-sm text-white bg-primary">
+      <div className="marquee">
+        <span>{content}</span>
+      </div>
+    </div>
+  );
 };
 
 export default BroadcastStrip;
