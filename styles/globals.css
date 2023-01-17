@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .base__container {
-  @apply relative max-w-xl px-6 mx-auto lg:max-w-7xl lg:px-8;
+  @apply relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8;
 }
 
 .marquee {
@@ -25,4 +25,9 @@
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+.navTransition {
+  transition-property: height 4s ease-out;
+  /* transition: height 3s ease-out; */
 }
