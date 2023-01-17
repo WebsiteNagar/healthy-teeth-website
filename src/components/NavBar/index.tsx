@@ -40,7 +40,15 @@ const NavBar = () => {
           { 'h-24': scrollY <= 50, 'h-10': scrollY > 50 }
         )}
       >
-        <Image src="/logo.jpeg" alt="Logo" width={scrollY > 50 ? 150 : 250} height={scrollY > 50 ? 150 : 250}></Image>
+        <div className="row flex w-[250px] justify-center">
+          <Image
+            className={classNames('self-end', { 'pt-1': scrollY > 50 })}
+            src="/logo.jpeg"
+            alt="Logo"
+            width={scrollY > 50 ? 150 : 250}
+            height={scrollY > 50 ? 150 : 250}
+          ></Image>
+        </div>
         <div className="decoration-gray-500">Home</div>
         <div>About Us</div>
         <div>Treatment</div>
