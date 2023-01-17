@@ -12,6 +12,9 @@ module.exports = {
         headings: "#004861",
         "primary-hover": "#0056b3",
       },
+      backgroundImage: {
+        footer: `url(/images/footer-bg.jpg)`,
+      },
     },
   },
   plugins: [],
