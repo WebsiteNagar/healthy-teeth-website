@@ -25,7 +25,11 @@ const NavBar = () => {
 
   return (
     <div className="align-center sticky top-0 h-28 justify-center bg-transparent">
-      <div className={'text-heading flex h-6 w-full flex-row justify-center bg-white text-sm'}>
+      <div
+        className={classNames('text-heading flex h-6 w-full flex-row justify-center bg-white text-sm', {
+          hidden: scrollY > 50
+        })}
+      >
         <div className="pr-10 text-end">Mon - Sat: 09:30 AM - 08:30 PM</div>
         <div className="ml-16 pr-10 text-end">Sun: 10:00 AM - 01:00 PM</div>
         <div className="ml-16 pr-10 text-end">A-4, Indra Place, Gaurav Tower Marg, Malviya Nagar, Jaipur</div>
