@@ -32,8 +32,8 @@ const NavBar = () => {
       </div>
       <div
         className={classNames(
-          'navTransition sticky top-0 flex w-full flex-row items-center justify-between bg-green-500 px-[3%] text-sm text-gray-700 transition-[height] duration-500 ease-in-out ',
-          { 'h-22': scrollY <= 50, 'h-10': scrollY > 50 }
+          'sticky top-0 flex w-full flex-row items-center justify-between bg-white px-[3%] text-sm text-gray-700 transition-[height] duration-[1000ms] ease-out ',
+          { 'h-24': scrollY <= 50, 'h-10': scrollY > 50 }
         )}
       >
         <Image src="/logo.jpeg" alt="Logo" width={scrollY > 50 ? 150 : 250} height={scrollY > 50 ? 150 : 250}></Image>
