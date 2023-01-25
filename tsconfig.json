@@ -37,7 +37,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/utils/mock/FooterData.tsx"
   ],
   "exclude": [
     "node_modules"
